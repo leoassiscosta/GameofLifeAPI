@@ -48,3 +48,32 @@ Before you begin, make sure you have the following tools installed on your machi
 
    ```bash
    dotnet restore
+
+## Configuration
+
+1. Docker
+The project is set up to run inside a Docker container. To configure MongoDB database and API with Docker, follow these steps:
+
+   ```yml
+   version: '3.8'
+services:
+  mongo:
+    image: mongo:latest
+    container_name: conway_mongo
+    ports:
+      - "27017:27017"
+    networks:
+      - conway_network
+  api:
+    build: .
+    container_name: conway_api
+    ports:
+      - "5000:5000"
+    networks:
+      - conway_network
+    depends_on:
+      - mongo
+
+networks:
+  conway_network:
+    driver: bridge
