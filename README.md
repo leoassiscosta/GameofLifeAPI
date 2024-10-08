@@ -41,5 +41,10 @@ Before you begin, make sure you have the following tools installed on your machi
 
 3. Navigate to the project directory:
 
-  ```bash
-  cd ConwayGameOfLifeAPI
+   ```bash
+   cd ConwayGameOfLifeAPI
+
+4. Restore dependencies:
+
+   ```bash
+   dotnet restore
