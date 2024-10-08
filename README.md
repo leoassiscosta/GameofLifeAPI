@@ -43,8 +43,3 @@ Before you begin, make sure you have the following tools installed on your machi
 
   ```bash
   cd ConwayGameOfLifeAPI
-
-4. Restore dependencies:
-
-  ```bash
-  dotnet restore
