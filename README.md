@@ -47,7 +47,7 @@ Before you begin, make sure you have the following tools installed on your machi
 
 ## Configuration
 
-# Docker
+### Docker
 1. The project is set up to run inside a Docker container. To configure MongoDB database and API with Docker, follow these steps:
 
    ```yml
@@ -81,7 +81,7 @@ Before you begin, make sure you have the following tools installed on your machi
 
 ## Execution
 
-# Running with Docker
+### Running with Docker
 
 1. Use docker-compose to bring up the MongoDB and API containers:
 
