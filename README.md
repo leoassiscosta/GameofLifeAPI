@@ -9,15 +9,11 @@ This is an API project that implements **Conway's Game of Life**, a simulation b
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Execution](#execution)
-- [API Routes](#api-routes)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Technologies
 
 - **C#**
-- **.NET 6.0**
+- **.NET 7.0**
 - **MongoDB** (as the database)
 - **Docker** (for containerization)
 - **MongoDB.Driver** (C# driver for MongoDB)
@@ -82,3 +78,15 @@ Before you begin, make sure you have the following tools installed on your machi
 
    ```bash
    docker-compose up
+
+## Execution
+
+# Running with Docker
+
+1. Use docker-compose to bring up the MongoDB and API containers:
+
+   ```bash
+   docker-compose up --
+
+3. The API will be available at: http://localhost:5000.
+   
