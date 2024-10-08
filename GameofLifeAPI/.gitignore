@@ -1,0 +1,67 @@
+# Ignore build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.vspscc
+*.vssscc
+*.suo
+*.sln.docstates
+
+# Rider project files
+.idea/
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Ignore Docker-related files (if dynamically generated)
+**/docker-compose.override.yml
+**/docker-compose.*.yml
+**/Dockerfile.*
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore database and sensitive configuration
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+secrets.json
+
+# Ignore package manager dependencies
+node_modules/
+npm-debug.log*
+
+# Ignore publish output
+wwwroot/
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+NuGet.Config
+NuGet.exe
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore Resharper files
+_ReSharper*/
+*.DotSettings.user
+
+# Ignore JetBrains Rider
+.idea/
+*.sln.iml
+
+# Ignore generated files
+Generated_Code/
+g/
+temp/
+
+# Ignore MongoDB database dumps (optional)
+*.bson
+*.json
+
+# Ignore Git-specific files
+.git/
