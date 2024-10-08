@@ -56,24 +56,24 @@ The project is set up to run inside a Docker container. To configure MongoDB dat
 
    ```yml
    version: '3.8'
-services:
-  mongo:
-    image: mongo:latest
-    container_name: conway_mongo
-    ports:
-      - "27017:27017"
-    networks:
-      - conway_network
-  api:
-    build: .
-    container_name: conway_api
-    ports:
-      - "5000:5000"
-    networks:
-      - conway_network
-    depends_on:
-      - mongo
-
-networks:
-  conway_network:
-    driver: bridge
+   services:
+     mongo:
+       image: mongo:latest
+       container_name: conway_mongo
+       ports:
+         - "27017:27017"
+       networks:
+         - conway_network
+     api:
+       build: .
+       container_name: conway_api
+       ports:
+         - "5000:5000"
+       networks:
+         - conway_network
+       depends_on:
+         - mongo
+   
+   networks:
+     conway_network:
+       driver: bridge
