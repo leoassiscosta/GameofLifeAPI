@@ -35,16 +35,16 @@ Before you begin, make sure you have the following tools installed on your machi
 ## Installation
 
 1. Clone the repository:
-
+   
    ```bash
    git clone https://github.com/yourusername/ConwayGameOfLifeAPI.git
 
-2. Navigate to the project directory:
+3. Navigate to the project directory:
 
   ```bash
   cd ConwayGameOfLifeAPI
 
-3. Restore dependencies:
+4. Restore dependencies:
 
   ```bash
   dotnet restore
