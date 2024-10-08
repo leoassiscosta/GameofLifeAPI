@@ -51,8 +51,8 @@ Before you begin, make sure you have the following tools installed on your machi
 
 ## Configuration
 
-1. Docker
-The project is set up to run inside a Docker container. To configure MongoDB database and API with Docker, follow these steps:
+# Docker
+1. The project is set up to run inside a Docker container. To configure MongoDB database and API with Docker, follow these steps:
 
    ```yml
    version: '3.8'
@@ -77,3 +77,8 @@ The project is set up to run inside a Docker container. To configure MongoDB dat
    networks:
      conway_network:
        driver: bridge
+
+2. Use docker-compose command to start MongoDB and API containers:
+
+   ```bash
+   docker-compose up
